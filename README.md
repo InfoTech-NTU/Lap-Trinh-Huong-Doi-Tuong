@@ -4,83 +4,101 @@
 - 🔹 Lập trình cấu trúc (Structural Programming) 
 - 🔹 Phương pháp lập trình hướng đối tượng (Object Oriented Programming) 
 - 🔹 Các nguyên lý cơ bản của lập trình hướng đối tượng
-- - Trừu tượng hóa (Abstraction)
-- - Bao đóng (Encapsulation)
-- 🔹 Các thành phần/khái niệm cơ bản trong C (biến, kiểu dữ liệu, toán tử, cú pháp cơ bản)  
-- 🔹 Một số lệnh cơ bản (`printf`, `scanf`, khai báo biến...)  
-- 🔹 📝 **Bài tập làm quen**  
+  - Trừu tượng hóa (Abstraction)
+  - Bao đóng (Encapsulation)
+  - Thừa kế (Inheritance)
+  - Đa hình (Polymorphism)
+- 🔹 📝 [Bài tập minh họa lập trình cấu trúc](https://github.com/nd-hung/oop/blob/main/docs/topics/overview/code/structured-programming/Program.cs)
 
 ---
 
-## II. Cấu trúc rẽ nhánh
-- 🔹 Khái niệm về cấu trúc rẽ nhánh (điều kiện)  
-- 🔹 Câu lệnh `if`, `if...else`, `else if`  
-- 🔹 Câu lệnh `switch...case`  
-- 🔹 📝 **Bài tập thực hành áp dụng rẽ nhánh**  
+## II. Nền tảng .NET và C#
+- 🔹 Ngôn ngữ lập trình C# 
+- 🔹 Các kiểu dữ liệu của C#
+- 🔹 🍀[Nền tảng .NET](https://learn.microsoft.com/en-us/dotnet/)  
 
 ---
 
-## III. Vòng lặp
-- 🔹 Tổng quan về vòng lặp và ứng dụng  
-- 🔹 Câu lệnh `for`  
-- 🔹 Câu lệnh `while`  
-- 🔹 Câu lệnh `do...while`  
-- 🔹 Sự khác nhau giữa các loại vòng lặp  
-- 🔹 📝 **Bài tập thực hành sử dụng vòng lặp**  
+## III. Lớp và đối tượng - Classes and Objects
+- 🔹 Cài đặt lớp  
+- 🔹 Thiết lập tính bao đóng  
+- 🔹 Tạo, sử dụng và hủy đối tượng
+- 🔹 Hàm thiết lập (constructor)
+- 🔹 Hàm hủy (destructor/finalizer)  
+- 🔹 Lớp tĩnh, thành phần tĩnh
+- 🔹 📝 [Ví dụ minh họa static class](https://github.com/nd-hung/oop/blob/main/docs/topics/classes-and-objects/code/TemperatureConverter/Program.cs)
+- 🔹 Con trỏ this
+- 🔹 Danh sách đối tượng
+  - Danh sách tĩnh (array)
+  - Danh sách động (list)
+- 🔹 Nạp chồng phương thức (method overloading)
+- 🔹 Nạp chồng toán tử (operator overloading)
+- 🔹 📝 [Ví dụ minh họa](https://github.com/nd-hung/oop/blob/main/docs/topics/classes-and-objects/code/OperatorOverloading/Program.cs) 
 
 ---
 
-## IV. Mảng 1 chiều - Mảng 2 chiều
-### 📌 Mảng 1 chiều
-- 🔹 Khái niệm và khai báo mảng 1 chiều  
-- 🔹 Các thao tác cơ bản: nhập, xuất, duyệt, tính tổng, tìm min/max, sắp xếp  
-- 🔹 📝 **Bài tập mảng 1 chiều**
-
-### 📌 Mảng 2 chiều
-- 🔹 Khái niệm và khai báo mảng 2 chiều  
-- 🔹 Các thao tác cơ bản: nhập, xuất, tính tổng hàng/cột/đường chéo...  
-- 🔹 📝 **Bài tập mảng 2 chiều**  
+## IV. Thừa kế - Inheritance
+- 🔹 Tổng quát hóa, đặc biệt hóa 
+- 🔹 Cài đặt thừa kế
+- 🔹 📝 [Các ví dụ thừa kế](https://github.com/nd-hung/oop/tree/main/docs/topics/inheritance/code)
+- 🔹 Quy tắc thừa kế
+- 🔹 Lớp niêm phong (sealed class)
+- 🔹 Nạp chồng phương thức của lớp cơ sở
+- 🔹 Ẩn phương thức của lớp cơ sở
+- 🔹 📝 [Ví dụ minh họa](https://github.com/nd-hung/oop/tree/main/docs/topics/inheritance/code/HidingBaseMethods)  
 
 ---
 
-## V. Chuỗi (String)
-- 🔹 Khái niệm về chuỗi và cách khai báo  
-- 🔹 Các thao tác cơ bản: nhập, xuất, duyệt chuỗi, đếm ký tự...  
-- 🔹 Một số hàm chuỗi có sẵn trong thư viện `<string.h>` như `strlen`, `strcpy`, `strcmp`, `strcat`...  
-- 🔹 📝 **[Bài tập thực hành xử lý chuỗi](https://github.com/InfoTech-NTU/Nhap-Mon-Lap-Trinh-C/tree/main/Bai_Tap_Chuoi)**
+## V. Đa hình - Polymorphism
+- 🔹 Dẫn nhập
+- 🔹 Kỹ thuật đa hình
+- 🔹 📝 [Ví dụ](https://github.com/nd-hung/oop/tree/main/docs/topics/polymorphism/code/Shape/)
+- 🔹 Lớp trừu tượng - AbstractClass, phương thức trừu tượng - Abstract Method
+- 🔹 Sự khác nhau giữa từ khóa new và override
+- 🔹 Giao diện (interface)
+- 🔹 Đa thừa kế
+- 🔹 📝 [Ví dụ đa thừa kế](https://github.com/nd-hung/oop/tree/main/docs/topics/polymorphism/code/MultipleInheritance)
 
 ---
 
 ## 💡 Một số gợi ý - tham khảo
-### 1. Một số thư viện hay dùng
+### 1. Một số sách/tài liệu
 
-| STT | Thư viện     | Chức năng                                                      |
+| STT | Tên tài liệu     | Tác giả                                                     |
 |-----|--------------|-----------------------------------------------------------------|
-| 1   | stdio.h      | Nhập/xuất dữ liệu (printf, scanf, fopen, fclose, ...)          |
-| 2   | stdlib.h     | Quản lý bộ nhớ (malloc, free), ép kiểu, tạo số ngẫu nhiên      |
-| 3   | string.h     | Xử lý chuỗi (strlen, strcpy, strcat, strcmp, ...)              |
-| 4   | math.h       | Các hàm toán học (sqrt, pow, sin, cos, ...)                    |
-| 5   | limits.h     | Giá trị giới hạn của các kiểu dữ liệu                          |
+| 1   | Lập trình hướng đối tượng      | Trần Đan Thư, Đinh Bá Tiến, Nguyễn Tấn Trần Minh Khang - NXB Khoa học kỹ thuật, 2010|
+| 2   | C# Programming Yellow Book     | Rob Miles, 2016|
+| 3   | Beginning C# Object-Oriented Programming    | Dan Clark, 2015|
+| 4   | Lập trình hướng đối tượng với C++       | Lê Đăng Hưng, Tạ Tuấn Anh, Nguyễn Hữu Đức, Nguyễn Thanh Thủy - NXB Khoa học kỹ thuật, 2005|
+| 5   | C++ How to Program, 10th edition     | Paul Dietel - Pearson, 2017|
 | 6   | ...          | ...                                                            |
 
-### 2. Một số điều kiện
+### 2. Tài liệu trực tuyến
 
-| STT | Điều kiện                   | Chức năng                                                       |
+| STT | Tên tài liệu     |
+|-----|--------------|
+| 1   | [Microsoft .NET documentation](https://learn.microsoft.com/en-us/dotnet/)|
+| 2   | [Microsoft C# documentation](https://learn.microsoft.com/en-us/dotnet/csharp/)|
+| 3   | [Learn to code in Visual Studio - Microsoft](https://visualstudio.microsoft.com/vs/getting-started/)|
+| 4   | [Create .NET console applications using Visual Studio Code](https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-6-0)|
+| 5   | [C# Tutorial - W3Schools](https://www.w3schools.com/cs/index.php)|
+| 6   | ...          |
+
+### 3. Một số từ khóa quan trọng
+
+| STT | Từ khóa                   | Chức năng                                                       |
 |-----|-----------------------------|-----------------------------------------------------------------|
-| 1   | n % 2  == 0                 | Điều kiện cho số n là **số chẵn**                               |
-| 2   | n % 2 == 1 hoặc n % 2 != 0  | Điều kiện cho số n là **số lẻ**                                 |
-| 3   | n % k == 0                  | Kiểm tra số **chia hết cho k**                                  |
-| 4   | temp = m % n                | Lấy kết quả dư của phép chia                                    |
-| 5   | abs(n)                      | Lấy **giá trị tuyệt đối** của `n` (`<stdlib.h>`)                |
-| 6   | sqrt(n)                     | Lấy **giá trị căn bậc 2** của `n` (`<math.h>`)                  |
-| 7   | pow(n,2)                    | Lấy **giá trị bình phương** của `n` (`<math.h>`)                |
-| 8   | i == j                      | Phần tử nằm trên **đường chéo chính**                           |
-| 9   | i + j == n - 1              | Phần tử nằm trên **đường chéo phụ**                             |
-| 10  | i < j                       | Phần tử thuộc **tam giác trên đường chéo chính** (Không tính đường chéo chính)   |
-| 11  | i > j                       | Phần tử thuộc **tam giác dưới đường chéo chính** (Không tính đường chéo chính)   |
-| 12  | i + j < n - 1               | Phần tử thuộc **tam giác trên đường chéo phụ** (Không tính đường chéo phụ)   |
-| 13  | i + j > n - 1               | Phần tử thuộc **tam giác dưới đường chéo phụ** (Không tính đường chéo phụ)   |
-| 14  | ...                         | ...                                                                    |
+| 1   | public                 | Truy cập được từ bất kỳ đâu, cả trong và ngoài assembly (dự án).                              |
+| 2   | private  | Chỉ truy cập được trong class hoặc struct chứa nó.|
+| 3   | protected                  | Truy cập được trong class hiện tại và class dẫn xuất (kế thừa).|
+| 4   | internal                | Truy cập được trong cùng một assembly (project), nhưng không từ bên ngoài.|
+| 5   | abstract                      | Dùng để khai báo lớp hoặc phương thức trừu tượng|
+| 6   | interface                    | Khai báo giao diện, chỉ chứa định nghĩa phương thức, không có thân|
+| 7   | virtual    | Từ khóa virtual được dùng để cho phép một phương thức trong lớp cha có thể được ghi đè (override) trong lớp con.|
+| 8   | override                   | Dùng trong lớp con để ghi đè (override) một phương thức virtual hoặc abstract trong lớp cha|
+| 9   | new                      | Dùng để ẩn (hide) một thành viên kế thừa từ lớp cha, khi bạn không muốn override mà muốn viết lại từ đầu|
+| 10  | static             | Dùng để khai báo biến, phương thức, hàm khởi tạo, hoặc lớp mà không cần tạo đối tượng.|
+| 11  | ...                         | ...                                                                    |
 
 ---
 
