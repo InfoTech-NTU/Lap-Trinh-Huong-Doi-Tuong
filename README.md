@@ -66,12 +66,13 @@
 
 | STT | Tên tài liệu     | Tác giả                                                     |
 |-----|--------------|-----------------------------------------------------------------|
-| 1   | Lập trình hướng đối tượng      | Trần Đan Thư, Đinh Bá Tiến, Nguyễn Tấn Trần Minh Khang - NXB Khoa học kỹ thuật, 2010|
-| 2   | C# Programming Yellow Book     | Rob Miles, 2016|
-| 3   | Beginning C# Object-Oriented Programming    | Dan Clark, 2015|
-| 4   | Lập trình hướng đối tượng với C++       | Lê Đăng Hưng, Tạ Tuấn Anh, Nguyễn Hữu Đức, Nguyễn Thanh Thủy - NXB Khoa học kỹ thuật, 2005|
-| 5   | C++ How to Program, 10th edition     | Paul Dietel - Pearson, 2017|
-| 6   | ...          | ...                                                            |
+| 1   | [Lập trình hướng đối tượng](https://nd-hung.github.io/oop/)      | Thầy Nguyễn Đình Hưng|
+| 2   | Lập trình hướng đối tượng      | Trần Đan Thư, Đinh Bá Tiến, Nguyễn Tấn Trần Minh Khang - NXB Khoa học kỹ thuật, 2010|
+| 3  | C# Programming Yellow Book     | Rob Miles, 2016|
+| 4   | Beginning C# Object-Oriented Programming    | Dan Clark, 2015|
+| 5  | Lập trình hướng đối tượng với C++       | Lê Đăng Hưng, Tạ Tuấn Anh, Nguyễn Hữu Đức, Nguyễn Thanh Thủy - NXB Khoa học kỹ thuật, 2005|
+| 6   | C++ How to Program, 10th edition     | Paul Dietel - Pearson, 2017|
+| 7  | ...          | ...                                                            |
 
 ### 2. Tài liệu trực tuyến
 
