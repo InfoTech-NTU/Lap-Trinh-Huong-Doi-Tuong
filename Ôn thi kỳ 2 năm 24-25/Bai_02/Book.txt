@@ -1,0 +1,172 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Book
+{
+	internal class Program
+	{
+		public abstract class  Book {
+			private string TenSach;
+			private int NamXB;
+			private int SoTrang;
+
+			protected Book(string tenSach, int namXB, int soTrang)
+			{
+				TenSach = tenSach;
+				NamXB = namXB;
+				SoTrang = soTrang;
+			}
+
+			public string TenSach1 { get => TenSach; set => TenSach = value; }
+			public int NamXB1 { get => NamXB; set => NamXB = value; }
+			public int SoTrang1 { get => SoTrang; set => SoTrang = value; }
+
+			public virtual void Nhap()
+			{
+				Console.WriteLine("Nhap ten sach: ");
+				TenSach = Console.ReadLine();
+				Console.WriteLine("Nhap nam xuat ban: ");
+				NamXB = int.Parse(Console.ReadLine());
+				Console.WriteLine("Nhap so trang");
+				SoTrang = int.Parse(Console.ReadLine());
+			}
+			public virtual void Xuat()
+			{
+				Console.WriteLine($"Ten sach: {TenSach}\nNam xuat ban: {NamXB}\n So trang: {SoTrang}\n");
+			}
+			public abstract double tinhGiaBan();
+		}
+		public class PaperBook : Book
+		{
+			private string TenNhaIn;
+
+			public PaperBook(string tenNhaIn="", string tenSach = "", int namXB=0, int soTrang = 0) : base(tenSach, namXB, soTrang)
+			{
+				TenNhaIn = tenNhaIn;
+			}
+
+			public string TenNhaIn1 { get => TenNhaIn; set => TenNhaIn = value; }
+
+			public override void Nhap()
+			{
+				base.Nhap();
+				Console.WriteLine("Nhap ten nha in:");
+				TenNhaIn = Console.ReadLine();
+			}
+			public override void Xuat()
+			{
+				base.Xuat();
+				Console.WriteLine($"Ten nha in: {TenNhaIn}\n");
+			}
+
+			public override double tinhGiaBan()
+			{
+				return SoTrang1 * 400;
+			}
+		}
+
+		public class EBook : Book
+		{
+			private string DinhDangSach;
+
+			public EBook(string dinhDangSach="", string tenSach="", int namXB = 0, int soTrang=0) : base(tenSach, namXB, soTrang)
+			{
+				DinhDangSach = dinhDangSach;
+			}
+
+			public string DinhDangSach1 { get => DinhDangSach; set => DinhDangSach = value; }
+			public override void Nhap()
+			{
+				base.Nhap();
+				Console.WriteLine("Nhap dinh dang sach:");
+				DinhDangSach = Console.ReadLine();
+			}
+			public override void Xuat()
+			{
+				base.Xuat();
+				Console.WriteLine($"Dinh dang sach: {DinhDangSach}");
+			}
+
+			public override double tinhGiaBan()
+			{
+				return SoTrang1 * 100;
+			}
+
+		}
+
+		static void Main(string[] args)
+		{
+			int n;
+			do
+			{
+				Console.WriteLine("Nhap so luong sach: ");
+				n = int.Parse(Console.ReadLine());
+			} while(!(n>2 && n<100));
+			List<Book> list = new List<Book>();
+			for(int i = 0; i < n; i++)
+			{
+				Console.WriteLine("Nhap loai sach (1.PaperBook/2.EBook)");
+				int loaiSach = int.Parse(Console.ReadLine());
+				if(loaiSach == 1)
+				{
+					Book paperbook = new PaperBook();
+					paperbook.Nhap();
+					list.Add(paperbook);
+				}
+				else if(loaiSach == 2)
+				{
+					Book ebook = new EBook();
+					ebook.Nhap();
+					list.Add(ebook);
+				}
+			}
+			Console.WriteLine("Danh sach sach vua nhap: \n");
+			foreach(Book book in list)
+			{
+				book.Xuat();
+			}
+
+			// Tim sach co gia cao nhat moi loai
+
+			Book max_paperBook = null;
+			Book max_eBook = null;
+
+			foreach (Book book in list)
+			{
+				if (book is PaperBook)
+				{
+					if (max_paperBook == null || book.tinhGiaBan() > max_paperBook.tinhGiaBan())
+					{
+						max_paperBook = book;
+					}
+				}
+				else if (book is EBook)
+				{
+					if (max_eBook == null || book.tinhGiaBan() > max_eBook.tinhGiaBan())
+					{
+						max_eBook = book;
+					}
+				}
+			}
+
+			//Xoa sach co thoi han luu hanh tren 10 nam
+			for (int i = 0; i<list.Count;i++)
+			{
+				if(DateTime.Now.Year - list[i].NamXB1 > 10)
+				{
+					list.RemoveAt(i);
+				}
+			}
+			Console.WriteLine("Danh sach sau khi xoa cac sach co thoi han luu hanh tren 10 nam");
+			foreach (Book book in list)
+			{
+				book.Xuat();
+			}
+			Console.ReadKey();
+		
+		}
+	}
+}
